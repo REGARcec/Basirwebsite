@@ -27,6 +27,12 @@
     </header>
 
     <section id="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="assets/hero-background.mp4" type="video/mp4">
+            <!-- Fallback image if video doesn't load -->
+            <img src="assets/hero-illustration.png" alt="Cybersecurity background" class="hero-image">
+        </video>
+        <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content">
                 <h1>Amankan Dunia Digital Bersama Kami</h1>
@@ -53,14 +59,17 @@
             <p class="lead">Basir Cyber Squad adalah komunitas yang berkomitmen pada pendidikan keamanan siber dan penelitian etis. Kami menyediakan platform untuk belajar, berbagi pengetahuan, dan berkontribusi pada ekosistem keamanan digital yang lebih baik.</p>
             <div class="about-grid">
                 <div class="about-card">
+                    <div class="tool-icon">🎯</div>
                     <h3>Misi Kami</h3>
                     <p>Mendidik generasi baru ahli keamanan siber melalui pendekatan praktis dan etis.</p>
                 </div>
                 <div class="about-card">
+                    <div class="tool-icon">⭐</div>
                     <h3>Nilai Kami</h3>
                     <p>Integritas, inovasi, dan kolaborasi dalam setiap aspek kegiatan kami.</p>
                 </div>
                 <div class="about-card">
+                    <div class="tool-icon">📈</div>
                     <h3>Dampak Kami</h3>
                     <p>Telah melatih ratusan profesional dan berkontribusi pada penelitian keamanan terdepan.</p>
                 </div>
@@ -110,6 +119,42 @@
                         <button onclick="decodeBase64()" class="tool-button">Decode</button>
                     </div>
                     <p id="base64-output" class="tool-output"></p>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🔍</div>
+                    <h3>URL Encoder/Decoder</h3>
+                    <p>Encode atau decode URL untuk keamanan web.</p>
+                    <textarea id="url-input" placeholder="Masukkan URL" class="tool-textarea"></textarea>
+                    <div class="button-group">
+                        <button onclick="encodeURL()" class="tool-button">Encode</button>
+                        <button onclick="decodeURL()" class="tool-button">Decode</button>
+                    </div>
+                    <p id="url-output" class="tool-output"></p>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">📊</div>
+                    <h3>String Analyzer</h3>
+                    <p>Analisis karakter, panjang, dan statistik string.</p>
+                    <textarea id="string-input" placeholder="Masukkan teks untuk dianalisis" class="tool-textarea"></textarea>
+                    <button onclick="analyzeString()" class="tool-button">Analyze</button>
+                    <p id="string-output" class="tool-output"></p>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🔄</div>
+                    <h3>Text Reverser</h3>
+                    <p>Balik urutan teks untuk encoding sederhana.</p>
+                    <textarea id="reverse-input" placeholder="Masukkan teks" class="tool-textarea"></textarea>
+                    <button onclick="reverseText()" class="tool-button">Reverse</button>
+                    <p id="reverse-output" class="tool-output"></p>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🎲</div>
+                    <h3>Random Number Generator</h3>
+                    <p>Generate angka acak untuk testing dan simulasi.</p>
+                    <input type="number" id="min-num" placeholder="Min" class="tool-input" value="1">
+                    <input type="number" id="max-num" placeholder="Max" class="tool-input" value="100">
+                    <button onclick="generateRandom()" class="tool-button">Generate</button>
+                    <p id="random-output" class="tool-output"></p>
                 </div>
             </div>
         </div>
@@ -163,7 +208,7 @@
                 <div class="footer-section">
                     <h4>Contact</h4>
                     <ul>
-                        <li>Email: info@basircybersquad.com</li>
+                        <li>Email: basirhamzahsrg@mail.com</li>
                         <li>Discord: Basir Cyber Squad</li>
                     </ul>
                     <div class="social-links">
@@ -174,7 +219,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Basir Cyber Squad. All rights reserved.</p>
+                <p>&copy; 2025 Basir Cyber Squad. All rights reserved.</p>
             </div>
         </div>
     </footer>

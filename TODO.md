@@ -1,39 +1,34 @@
-# TODO List for Basir Cyber Squad Website Redesign
+# TODO List for Basir Cyber Squad Website Enhancement
 
-## Step 1: Update HTML Structure
-- [x] Add logo (horizontal and mark versions) and tagline to header
-- [x] Restructure hero section with title, subtitle, CTAs, and trusted badges
-- [x] Enhance About section with team info, credentials, and case studies
-- [x] Convert tools to professional cards with consistent design
-- [x] Update footer with 4 columns (About, Resources, Legal, Contact + social links)
-- [x] Add sections for services/resources, testimonials/credentials
+## Step 1: Add More Tools
+- [x] Add URL Encoder/Decoder tool
+- [x] Add String Analyzer tool
+- [x] Add Text Reverser tool
+- [x] Add Random Number Generator tool
+- [x] Update JavaScript functions for all new tools
 
-## Step 2: Update CSS for Professional Theme
-- [x] Change color palette: charcoal dominant, cyan/teal accent, neutral grays, soft orange for secondary CTA
-- [x] Update fonts: Inter/Poppins for headings, Roboto/Open Sans for body (min 16px)
-- [x] Remove hacker effects: matrix rain, glowing, green accents
-- [x] Implement grid layout (12-column) with generous white space
-- [x] Add subtle shadows, hover effects (scale 1.03, soft shadow), transitions 180-250ms
-- [x] Ensure high contrast for accessibility (WCAG AA)
-- [x] Make fully responsive, prioritize mobile UX
+## Step 2: Add Video Background
+- [x] Add video element to hero section
+- [x] Add overlay for text readability
+- [x] Update CSS for video positioning and styling
+- [x] Add fallback image if video doesn't load
 
-## Step 3: Update JavaScript for Subtle Interactions
-- [x] Remove typing animation, replace with static hero text
-- [x] Add microinteractions: hover elevations, scroll reveals (fade + slide)
-- [x] Keep tool functionalities but enhance UX (loading skeletons if needed)
-- [x] Ensure keyboard navigation and screen reader support
-- [x] Add form validation and better error handling
+## Step 3: Redesign for Modern Professional Look
+- [x] Update styles.css: Remove duplicates, modernize colors (dark theme with cyan accents), fix class names (.tool to .tool-card), improve layout and responsiveness
+- [x] Update index.html: Fix class names, enhance content descriptions, add features section
+- [x] Update script.js: Ensure all tools work, add any missing functionality
+- [x] Test all functionality and responsiveness
 
-## Step 4: Add Professional Elements
-- [ ] Create logo assets (horizontal, mark) in assets/ folder
-- [ ] Add high-quality images/illustrations for hero and team
-- [ ] Implement search functionality with auto-suggestions
-- [ ] Add legal/ethical disclaimers in footer and dedicated page
-- [ ] Include social proof: client badges, participant numbers
+## Step 4: Final Testing and Deployment
+- [ ] Test all new tools functionality
+- [ ] Test video background loading and performance
+- [ ] Ensure responsive design works with new elements
+- [ ] Deploy to GitHub Pages or Netlify
+- [ ] Verify all assets are accessible online
 
-## Step 5: Testing and Final Touches
-- [ ] Test accessibility (contrast, alt-text, keyboard focus)
-- [ ] Verify responsiveness across devices
-- [ ] Optimize performance (minify if needed)
-- [ ] Final review for professional tone and branding consistency
-- [ ] Deploy to GitHub Pages or similar for online access
+## Step 5: Additional Enhancements (Future)
+- [ ] Add dark/light theme toggle
+- [ ] Add more advanced tools (file hash, encryption)
+- [ ] Add user authentication for saved tools
+- [ ] Add API endpoints for tools
+- [ ] Add blog/news section

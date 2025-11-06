@@ -155,6 +155,96 @@ document.addEventListener('keydown', function(e) {
     }
 });
 
+// Fungsi URL Encoder/Decoder
+function encodeURL() {
+    const text = document.getElementById('url-input').value.trim();
+    const output = document.getElementById('url-output');
+
+    if (!text) {
+        output.innerText = 'Harap masukkan URL.';
+        return;
+    }
+
+    try {
+        const encoded = encodeURIComponent(text);
+        output.innerText = encoded;
+    } catch (error) {
+        output.innerText = 'Error: ' + error.message;
+    }
+}
+
+function decodeURL() {
+    const text = document.getElementById('url-input').value.trim();
+    const output = document.getElementById('url-output');
+
+    if (!text) {
+        output.innerText = 'Harap masukkan URL.';
+        return;
+    }
+
+    try {
+        const decoded = decodeURIComponent(text);
+        output.innerText = decoded;
+    } catch (error) {
+        output.innerText = 'Error: URL encoding tidak valid.';
+    }
+}
+
+// Fungsi String Analyzer
+function analyzeString() {
+    const text = document.getElementById('string-input').value.trim();
+    const output = document.getElementById('string-output');
+
+    if (!text) {
+        output.innerText = 'Harap masukkan teks.';
+        return;
+    }
+
+    const length = text.length;
+    const words = text.trim().split(/\s+/).length;
+    const chars = {};
+    for (let char of text) {
+        chars[char] = (chars[char] || 0) + 1;
+    }
+    const uniqueChars = Object.keys(chars).length;
+    const result = `Panjang: ${length} karakter\nKata: ${words}\nKarakter unik: ${uniqueChars}`;
+    output.innerText = result;
+}
+
+// Fungsi Text Reverser
+function reverseText() {
+    const text = document.getElementById('reverse-input').value.trim();
+    const output = document.getElementById('reverse-output');
+
+    if (!text) {
+        output.innerText = 'Harap masukkan teks.';
+        return;
+    }
+
+    const reversed = text.split('').reverse().join('');
+    output.innerText = reversed;
+}
+
+// Fungsi Random Number Generator
+function generateRandom() {
+    const min = parseInt(document.getElementById('min-num').value);
+    const max = parseInt(document.getElementById('max-num').value);
+    const output = document.getElementById('random-output');
+
+    if (isNaN(min) || isNaN(max)) {
+        output.innerText = 'Harap masukkan angka yang valid.';
+        return;
+    }
+
+    if (min >= max) {
+        output.innerText = 'Min harus lebih kecil dari Max.';
+        return;
+    }
+
+    const random = Math.floor(Math.random() * (max - min + 1)) + min;
+    output.innerText = random;
+}
+
 // Initialize on load
 window.addEventListener('load', function() {
     // Add focus styles for accessibility
